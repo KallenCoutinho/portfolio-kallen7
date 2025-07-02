@@ -1,43 +1,248 @@
-
+<!-- código HTML completo com imagens corrigidas -->
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio | Kallen Coutinho</title>
-  <meta property="og:title" content="Portfólio | Kallen Coutinho" />
-  <meta property="og:description" content="Design com propósito, impacto e personalidade. Conheça meus projetos." />
-  <meta property="og:image" content="https://i.ibb.co/DH2Mn5ZP/artes-da-empresa-1.png" />
-  <meta name="description" content="Portfólio profissional de Kallen Coutinho, designer gráfico especializado em identidade visual, social media e arte digital.">
-  <meta name="keywords" content="Design gráfico, Portfólio, Kallen Coutinho, Identidade visual, Social media, Designer em Goiânia">
-  <meta name="author" content="Kallen Coutinho">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-900 text-white">
-  <header class="text-center py-16">
-    <h1 class="text-5xl font-bold">Kallen Coutinho</h1>
-    <p class="text-xl text-gray-300 mt-4">Transformando ideias em experiências visuais</p>
-  </header>
-  <main class="max-w-4xl mx-auto px-4">
-    <section class="py-12">
-      <h2 class="text-3xl font-bold mb-4">Serviços</h2>
-      <p class="text-gray-400">Identidade visual, social media, ilustração e mais.</p>
-    </section>
-    <section class="py-12">
-      <h2 class="text-3xl font-bold mb-4">Projetos</h2>
-      <p class="text-gray-400">Conheça meus trabalhos mais recentes e impactantes.</p>
-    </section>
-    <section class="py-12">
-      <h2 class="text-3xl font-bold mb-4">Sobre mim</h2>
-      <p class="text-gray-400">Sou um designer apaixonado por transformar ideias em criações reais. Vamos criar juntos!</p>
-    </section>
-    <section class="py-12">
-      <h2 class="text-3xl font-bold mb-4">Contato</h2>
-      <p class="text-gray-400">Email: kallencoutinho@gmail.com | WhatsApp: (62) 99144-4210</p>
-    </section>
-  </main>
-  <footer class="text-center py-10 text-gray-500 text-sm">
-    &copy; 2025 Kallen Coutinho. Todos os direitos reservados.
-  </footer>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Portfólio profissional de Kallen Coutinho, designer gráfico especializado em identidade visual, social media e arte digital." name="description"/>
+<meta content="Design gráfico, Portfólio, Kallen Coutinho, Identidade visual, Social media, Designer em Goiânia" name="keywords"/>
+<meta content="Kallen Coutinho" name="author"/>
+<meta content="Portfólio | Kallen Coutinho" property="og:title"/>
+<meta content="Soluções criativas em design gráfico. Veja os projetos e serviços de Kallen Coutinho." property="og:description"/>
+<meta content="https://i.ibb.co/VZL5YGx/kg-2-3.png" property="og:image"/>
+<meta content="website" property="og:type"/>
+<meta content="https://art.desingkg" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Portfólio | Kallen Coutinho" name="twitter:title"/>
+<meta content="Soluções criativas em design gráfico. Veja os projetos e serviços de Kallen Coutinho." name="twitter:description"/>
+<meta content="https://i.ibb.co/VZL5YGx/kg-2-3.png" name="twitter:image"/>
+<title>Portfólio | Kallen Coutinho</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .fade-section {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .fade-section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sections = document.querySelectorAll(".fade-section");
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
+      }, { threshold: 0.1 });
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+    });
+  </script>
+<link href="https://i.ibb.co/rkmyXqx/favicon-kg.png" rel="icon" type="image/png"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/></head>
+<body class="bg-gray-800 text-gray-100">
+<div class="fixed inset-0 bg-black flex items-center justify-center z-50 transition-opacity duration-700" id="preloader">
+<h1 class="text-white text-3xl font-bold animate-pulse">Art.DesignKG</h1>
+</div>
+<script>
+  window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+      preloader.style.opacity = '0';
+      setTimeout(() => preloader.remove(), 700);
+    }
+  });
+</script>
+<!-- Header -->
+<header class="bg-black shadow py-6">
+<div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+<h1 class="text-2xl font-bold text-white text-xl md:text-2xl lg:text-4xl">Art.DesignKG</h1>
+<nav aria-label="Navegação principal" class="space-x-6"><a aria-label="Ir para a seção Serviços" class="text-gray-300 hover:text-teal-400" href="#servicos">Serviços</a><a aria-label="Ir para a seção Projetos em Destaque" class="text-gray-300 hover:text-teal-400" href="#projetos">Projetos em Destaque</a><a aria-label="Ir para a seção Sobre mim" class="text-gray-300 hover:text-teal-400" href="#sobre">Sobre mim</a><a aria-label="Ir para a seção Contato" class="text-gray-300 hover:text-teal-400" href="#contato">Contato</a></nav>
+</div>
+</header>
+<!-- Seção: Serviços -->
+<section class="py-20 bg-gray-800 fade-section px-4 sm:px-6 lg:px-8" id="servicos">
+<div class="max-w-6xl mx-auto px-4">
+<h2 class="mb-4 mb-6 md:text-2xl lg:text-4xl text-center font-extrabold text-xl text-white text-5xl">Serviços</h2>
+<p class="text-lg mb-4 mt-0 text-center mx-auto max-w-4xl mb-8 text-gray-300">
+  Soluções criativas que transformam sua presença digital e fortalecem a identidade da sua marca.
+</p>
+<p class="text-center text-gray-400 text-base max-w-3xl mx-auto mb-12">
+  Do conteúdo visual à estratégia de branding, cada serviço é pensado com carinho e profissionalismo.
+</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-gray-900 p-6 rounded-xl shadow">
+<h3 class="text-lg font-semibold text-white mb-1">Mídias Sociais</h3>
+<p class="text-gray-300">Criação de posts, banners e anúncios atraentes para Instagram, Facebook e TikTok, potencializando sua presença digital.</p>
+</div>
+<div class="bg-gray-900 p-6 rounded-xl shadow">
+<h3 class="text-lg font-semibold text-white mb-1">Branding e Identidade Visual</h3>
+<p class="text-gray-300">Desenvolvimento de logos, paletas de cores e manual de marca para destacar seu negócio com identidade forte.</p>
+</div>
+<div class="bg-gray-900 p-6 rounded-xl shadow">
+<h3 class="text-lg font-semibold text-white mb-1">Embalagens e Rótulos</h3>
+<p class="text-gray-300">Design criativo para embalagens que valorizam e vendem seu produto nas prateleiras.</p>
+</div>
+<div class="bg-gray-900 p-6 rounded-xl shadow">
+<h3 class="text-lg font-semibold text-white mb-1">E-commerce</h3>
+<p class="text-gray-300">Layouts e banners para lojas online que aumentam sua conversão e destacam seus produtos.</p>
+</div>
+<div class="bg-gray-900 p-6 rounded-xl shadow">
+<h3 class="text-lg font-semibold text-white mb-1">Ilustração e Arte Digital</h3>
+<p class="text-gray-300">Ilustrações personalizadas que enriquecem seu marketing e criam conexões únicas com seu público.</p>
+</div>
+<div class="bg-gray-900 p-6 rounded-xl shadow">
+<h3 class="text-lg font-semibold text-white mb-1">Design Editorial</h3>
+<p class="text-gray-300">Projeto gráfico para revistas, catálogos e folhetos que transmitem profissionalismo e estilo.</p>
+</div>
+<div class="bg-gray-900 p-6 rounded-xl shadow lg:col-span-3">
+<h3 class="text-lg font-semibold text-white mb-1">Design para Eventos</h3>
+<p class="text-gray-300">Convites, banners e materiais que destacam seu evento com elegância e criatividade.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Seção: Projetos -->
+<section class="py-20 bg-gray-800 fade-section px-4 sm:px-6 lg:px-8" id="projetos">
+<div class="max-w-6xl mx-auto px-4">
+<h2 class="mb-4 md:text-2xl lg:text-4xl text-center font-extrabold text-xl text-white text-5xl">Projetos em Destaque</h2><p class="text-lg mb-10 mt-0 text-center mx-auto max-w-3xl mb-8 text-gray-300">Veja como cada detalhe se transforma em resultado.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="shadow hover:shadow-lg hover:scale-105 bg-gray-900 transform p-4 transition duration-300 rounded-xl">
+<img alt="Nintendo Switch" class="rounded mb-4 max-w-full h-auto" src="https://i.ibb.co/VZL5YGx/kg-2-3.png"/>
+<h3 class="text-xl font-bold text-white mb-2 text-xl md:text-2xl lg:text-4xl">Banner Promocional - Nintendo Switch</h3>
+<p class="text-gray-300 mb-4">Criação de arte promocional para divulgação do console Nintendo Switch em redes sociais. Visual moderno e chamativo para impulsionar vendas.</p>
+<a class="text-teal-400 hover:underline" href="https://www.instagram.com/art.desingkg" target="_blank">Faça já sua arte →</a>
+</div>
+<div class="shadow hover:shadow-lg hover:scale-105 bg-gray-900 transform p-4 transition duration-300 rounded-xl">
+<img alt="Design de Produto" class="rounded mb-4 max-w-full h-auto" src="https://i.ibb.co/j9hyWXjq/kg-2-2.png"/>
+<h3 class="text-xl font-bold text-white mb-2 text-xl md:text-2xl lg:text-4xl">Design de Produto - Moda e Varejo</h3>
+<p class="text-gray-300 mb-4">Criação de artes voltadas à divulgação de produtos de moda e varejo. Visual impactante para campanhas de venda e branding no Instagram.</p>
+<a class="text-teal-400 hover:underline" href="https://www.instagram.com/art.desingkg" target="_blank">Faça já sua arte →</a>
+</div>
+<div class="shadow hover:shadow-lg hover:scale-105 bg-gray-900 transform p-4 transition duration-300 rounded-xl">
+<img alt="Social Media Neymar" class="rounded mb-4 max-w-full h-auto" src="https://i.ibb.co/rKpj4BFQ/artes-da-empresa.png"/>
+<h3 class="text-xl font-bold text-white mb-2 text-xl md:text-2xl lg:text-4xl">Social Media - Conteúdo Variado</h3>
+<p class="text-gray-300 mb-4">Design de conteúdo para diferentes segmentos como esporte, cultura pop e tendências. Estratégia visual para engajamento nas redes sociais.</p>
+<a class="text-teal-400 hover:underline" href="https://www.instagram.com/art.desingkg" target="_blank">Faça já sua arte →</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Seção: Sobre mim -->
+<!-- Seção: Sobre mim -->
+<!-- Seção: Depoimentos -->
+<!-- Seção: Depoimentos -->
+<section class="py-24 bg-gray-800 fade-section px-4 sm:px-6 lg:px-8" id="depoimentos">
+<div class="max-w-5xl mx-auto px-4 text-center">
+<h2 class="mb-10 mb-4 md:text-2xl text-4xl lg:text-4xl font-extrabold text-xl text-white">O que dizem sobre meu trabalho</h2><p class="text-lg mb-10 mt-0 text-center mx-auto max-w-3xl mb-8 text-gray-300">Confiança, excelência e impacto real nas palavras de quem já viveu a experiência.</p>
+<div class="grid md:grid-cols-3 gap-8 text-left">
+<div class="bg-gray-900 p-6 rounded-xl shadow">
+<p class="text-gray-300 italic mb-4">“Trabalhar com o Kallen foi leve, rápido e surpreendente. Meu projeto ficou mais bonito do que imaginei!”</p>
+<p class="text-sm text-gray-500">— Ana Rodrigues, fundadora da Lumi Ateliê</p>
+</div>
+<div class="bg-gray-900 p-6 rounded-xl shadow">
+<p class="text-gray-300 italic mb-4">“Excelente comunicação e entrega impecável. O design ficou exatamente como eu precisava.”</p>
+<p class="text-sm text-gray-500">— Diego Martins, gestor de marketing</p>
+</div>
+<div class="bg-gray-900 p-6 rounded-xl shadow">
+<p class="text-gray-300 italic mb-4">“Kallen é muito profissional, atencioso e tem um olhar sensível para cada detalhe.”</p>
+<p class="text-sm text-gray-500">— Camila Freitas, criadora de conteúdo</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-gray-800 fade-section px-4 sm:px-6 lg:px-8" id="sobre">
+<div class="max-w-5xl mx-auto px-4 text-center">
+<h2 class="text-5xl font-extrabold text-white mb-8 text-xl md:text-2xl lg:text-4xl">Sobre mim</h2>
+<p class="text-xl text-white mb-6">
+      Olá, sou Kallen Coutinho, designer gráfico especializado em soluções visuais criativas e estratégicas.
+    </p>
+<p class="text-lg text-gray-300 mb-4">
+      Com 22 anos e uma paixão genuína por design e comunicação, fundei esta marca com o propósito de ajudar pessoas a transformarem suas ideias em projetos reais e impactantes.
+    </p>
+<p class="text-lg text-gray-300">
+      Acredito que todo bom design nasce de uma boa intenção. Por isso, coloco técnica, sensibilidade e visão em cada criação — seja para redes sociais, identidade visual ou campanhas promocionais. Se você tem um projeto em mente, estou aqui para tornar ele realidade com profissionalismo e originalidade.
+    </p>
+</div>
+</section>
+<!-- Seção: Contato -->
+<!-- Citação Inspiradora -->
+<section class="py-16 bg-gray-800 fade-section px-4 sm:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto px-4 text-center">
+<p class="text-xl italic text-gray-300 mb-2">“O design é a ponte entre o que você sonha e o que o mundo vê.”</p>
+<p class="text-sm text-gray-500">— Kallen Coutinho</p>
+</div>
+</section>
+<section class="py-24 bg-gray-900 text-center px-4 sm:px-6 lg:px-8" id="contato">
+<div class="max-w-3xl mx-auto px-4 text-center">
+<div class="bg-gray-800 p-10 rounded-2xl shadow-lg">
+<h2 class="text-4xl font-extrabold text-white mb-4 text-xl md:text-2xl lg:text-4xl">Pronto para dar vida ao seu projeto?</h2>
+<p class="text-gray-300 mb-6 text-lg">Entre em contato e comece agora seu próximo projeto de sucesso.</p>
+<p class="text-gray-400 mb-6">E-mail: <strong class="text-white">kallencoutinho@gmail.com</strong></p>
+<a class="inline-block bg-teal-500 hover:bg-teal-400 text-white px-6 py-3 rounded-full font-semibold transition" href="https://wa.me/5562991444210" target="_blank">
+          Fale comigo no WhatsApp
+        </a>
+</div>
+</div>
+</section>
+<!-- Rodapé -->
+<!-- Rodapé com Redes no Local Precisado -->
+<footer class="bg-black text-gray-400 py-20 px-6 text-left">
+<div class="max-w-6xl mx-auto relative">
+<!-- Marca -->
+<h3 class="text-3xl font-extrabold text-white mb-6 text-xl md:text-2xl lg:text-4xl">Art.DesignKG</h3>
+<p class="text-xl text-gray-400 mb-2">Experiências transformadoras por meio do design</p>
+<p class="text-2xl font-bold text-white mb-8">Vamos trabalhar juntos.</p>
+<p class="text-2xl text-white mb-10">kallencoutinho@gmail.com</p>
+<div class="mb-12">
+<p class="text-lg text-gray-400">Localização</p>
+<p class="text-xl font-semibold text-white">Goiânia <span class="mx-2 text-gray-500">•</span> Brasil</p>
+<p class="text-sm text-gray-500 mt-1">Atendimento para todo o Brasil</p>
+</div>
+<div class="absolute right-0 bottom-20 text-right pr-2 hidden md:block">
+<p class="text-sm">WhatsApp: (62) 99144-4210</p>
+<p class="text-sm">Instagram: <a class="text-teal-400 hover:underline" href="https://www.instagram.com/art.desingkg" target="_blank">@art.desingkg</a></p>
+</div>
+<div class="border-t border-gray-700 pt-4 text-sm text-gray-500 text-center">
+<p>© 2025 Kallen Coutinho. Todos os direitos reservados. <span class="mx-2">•</span>
+<a class="hover:underline" href="#">Política de Privacidade</a> <span class="mx-2">•</span>
+<a class="hover:underline" href="#">Termos</a>
+</p>
+</div>
+</div>
+</footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const servicos = document.querySelectorAll("#servicos .grid > div");
+    if (servicos.length > 0) {
+      servicos[servicos.length - 1].classList.add("mb-10");
+    }
+  });
+</script>
+<button id="btnTopo" style="position: fixed; bottom: 24px; right: 24px; background-color: #14b8a6; color: white; padding: 12px 16px; border-radius: 9999px; display: none; z-index: 50;" title="Voltar ao topo">
+  ↑ Topo
+</button>
+<script>
+window.addEventListener("scroll", function () {
+  const btn = document.getElementById("btnTopo");
+  if (window.scrollY > 300) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+});
+document.getElementById("btnTopo").addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
 </body>
 </html>
